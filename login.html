@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title> <!-- 
+    <title>Login</title> <!-- 
         - favicon
       -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -15,6 +13,7 @@
         - custom css link
       -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 
     <!-- 
         - google font link
@@ -31,13 +30,7 @@
     <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
     <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
-
     <style>
-        body {
-            background-color: #fff8f0;
-            margin-top: 100px;
-        }
-
         .header {
             color: orange;
         }
@@ -46,15 +39,6 @@
 </head>
 
 <body id="top">
-
-    <!-- Top Bar -->
-    <div class="topbar">
-        <a href="register.html"><button class="btn-topbar btn-hover">Register</button> </a>
-        <a href="login.html"><button class="btn-topbar btn-hover">Login</button> </a>
-    </div>
-
-
-
 
 
     <header class="header" data-header>
@@ -86,7 +70,6 @@
                     <li class="nav-item">
                         <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
                     </li>
-
                 </ul>
             </nav>
 
@@ -131,75 +114,21 @@
     </div>
 
 
-
-
-    <!-- 
-        - #ABOUT
-      -->
-
-    <section class="section section-divider gray about" id="about">
+    <div id="contact" class="contact-section">
+      <h2>Login Now !</h2> 
+      <p> Your order is just a step away </p>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Enter Email Adress" required />
+            <input type="password" name="password" placeholder="Set Password" required />
+            <button class="contact-button" type="submit">Login </button>
+        </form>
         <div class="container">
-
-            <div class="about-banner">
-                <img src="./assets/images/about-banner.png" width="509" height="459" loading="lazy"
-                    alt="Burger with Drinks" class="w-100 about-img">
-
-                <img src="./assets/images/sale-shape-red.png" width="216" height="226" alt="get up to 50% off now"
-                    class="abs-img scale-up-anim">
-            </div>
-
-            <div class="about-content">
-
-                <h2 class="h2 section-title">
-                    Caferio, Burgers, and Best Pizzas
-                    <span class="span">in Town!</span>
-                </h2>
-
-                <p class="section-text">
-                    The restaurants in Hangzhou also catered to many northern Chinese who had fled south from Kaifeng
-                    during
-                    the Jurchen
-                    invasion of the 1120s, while it is also known that many restaurants were run by families.
-                </p>
-
-                <ul class="about-list">
-
-                    <li class="about-item">
-                        <ion-icon name="checkmark-outline"></ion-icon>
-
-                        <span class="span">Delicious & Healthy Foods</span>
-                    </li>
-
-                    <li class="about-item">
-                        <ion-icon name="checkmark-outline"></ion-icon>
-
-                        <span class="span">Spacific Family And Kids Zone</span>
-                    </li>
-
-                    <li class="about-item">
-                        <ion-icon name="checkmark-outline"></ion-icon>
-
-                        <span class="span">Music & Other Facilities</span>
-                    </li>
-
-                    <li class="about-item">
-                        <ion-icon name="checkmark-outline"></ion-icon>
-
-                        <span class="span">Fastest Food Home Delivery</span>
-                    </li>
-
-                </ul>
-
-                <button class="btn btn-hover">Order Now</button>
-
-            </div>
-
+            <a href="register.html">
+                <h2> Not having an account? Register Now</h2>
+            </a>
         </div>
-    </section>
+    </div>
 
-    <!-- 
-        - #ABOUT
-      -->
 
     <!-- 
     - #FOOTER
@@ -294,7 +223,7 @@
 
                     <div class="input-wrapper">
 
-                        <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
+                        <input type="text" name="full_name" required placeholder="Name" aria-label="Your Name"
                             class="input-field">
 
                         <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
@@ -329,7 +258,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <p class="copyright-text">
-                    &copy; 2025 <a href="#" class="copyright-link">Sampada Bhise</a> All Rights Reserved.
+                    &copy; 2022 <a href="#" class="copyright-link">Sampada Bhise</a> All Rights Reserved.
                 </p>
             </div>
         </div>
